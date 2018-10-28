@@ -36,14 +36,15 @@ int main() {
 	string numberString;
 	int number;
 
-	cout << "Enter numbers" << endl;
+	cout << "Enter number and I will let you know"
+		<< " if Palindrome or not" << endl;
+
 	getline(cin, numberString);
 	stringstream(numberString) >> number;
 
-	cout << "Your number " << number << " ";
-
-	isPalindrome(number) ? (cout << "is a Palindrome!") :
-		(cout << "is not a Palindrome!");
+	cout << "Your number " << number 
+		<< " " << (isPalindrome(number) ?  
+		"is a Palindrome!" : "is not a Palindrome!");
 
 	cout << endl;
 
