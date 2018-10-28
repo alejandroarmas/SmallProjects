@@ -34,9 +34,9 @@ int main()
 			reverseStatement += statement.at(i);
 		}
 
-		(statement == reverseStatement) ?
-			(cout << "Yes that's a palindrome!")
-			: (cout << "No thats not a palindrome");
+		cout << (statement == reverseStatement ?
+			"Yes that's a palindrome!"
+			: "No thats not a palindrome" );
 
 
 		cout << endl <<
