@@ -17,25 +17,24 @@ using namespace std;
 
 int main()
 {
-	string againString;
-
+	string againString,
+	statement;
+	
+	int capitalCount = 0;
+		
 	char again;
 
 	do
 	{
-		string statement;
-
+		
 		cout << "Enter any statement, and I will let you know" <<
 			" how many uppercase letters there are" << endl;
 
 		getline(cin, statement);
 
-		int capitalCount = 0;
-
 		for (int i = 0, n = statement.size(); i < n; i++) {
 
 			capitalCount += isupper(statement.at(i));
-
 		}
 
 		cout << "The total number of uppercase letters was "
