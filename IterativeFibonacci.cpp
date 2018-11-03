@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// uses no conditional if/else. prints sequence beginning at 4 only. 
 void printNumbers(int x) {
 
 	int first = 1,
