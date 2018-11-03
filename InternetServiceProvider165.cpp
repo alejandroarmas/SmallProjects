@@ -1,6 +1,6 @@
 /***************************************************************
 Problem: Making Decisions: Internet Service Provider
-Question: Write a program that calculates a customer’s monthly bill.
+Question: Write a program that calculates a customerâ€™s monthly bill.
 It should ask which package the customer has purchased and how many hours
 were used. It should then display the total amount due.
 Name: Alejandro Armas
@@ -125,7 +125,7 @@ int main()
 	cout << "You will pay a total of " << priceB <<
 	"$ for your internet package" << endl << endl;
 				
-				if (hours > 20) {
+				if (hours > MAX_HOURS_B) {
 
 	cout << "You could have saved " << priceB - priceA << 
 	"$ switching to our best Package" << endl;
@@ -138,7 +138,7 @@ int main()
 	cout << "You will pay a total of " << priceC <<
 	"$ for your internet package" << endl << endl;
 				
-				if (hours > 10) {
+				if (hours > MAX_HOURS_C) {
 
 	cout << "You could have saved " << priceC - priceA <<
 	"$ switching to our best Package" << endl;
