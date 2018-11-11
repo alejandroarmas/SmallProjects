@@ -16,13 +16,10 @@ using namespace std;
 
 int count(const string & s, char a) {
 
-	if (s.size() == 0)
-		return 0;
-
-	else if (toupper(s.at(0)) == a)
-		return 1 + count(s.substr(1), toupper(a));
-	else
-		return count(s.substr(1), toupper(a));
+	if (!s.size())
+    return 0;  
+  else
+      return (toupper(s.at(0)) == toupper(a) )+ count(s.substr(1), toupper(a));
 }
 
 int main() {
